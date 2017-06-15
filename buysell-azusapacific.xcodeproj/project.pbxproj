@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD43ADC1EF2DF88003CAF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */; };
+		2CD43ADE1EF2DF88003CAF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */; };
+		2CD43AE11EF2DF88003CAF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43ADF1EF2DF88003CAF19 /* Main.storyboard */; };
+		2CD43AE31EF2DF88003CAF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */; };
+		2CD43AE61EF2DF88003CAF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43AE41EF2DF88003CAF19 /* LaunchScreen.storyboard */; };
+		2CD43AF11EF2DF88003CAF19 /* buysell_azusapacificTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43AF01EF2DF88003CAF19 /* buysell_azusapacificTests.swift */; };
+		2CD43AFC1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CD43AED1EF2DF88003CAF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD43AD01EF2DF88003CAF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CD43AD71EF2DF88003CAF19;
+			remoteInfo = "buysell-azusapacific";
+		};
+		2CD43AF81EF2DF88003CAF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD43AD01EF2DF88003CAF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CD43AD71EF2DF88003CAF19;
+			remoteInfo = "buysell-azusapacific";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CD43AD81EF2DF88003CAF19 /* buysell-azusapacific.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "buysell-azusapacific.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CD43AE01EF2DF88003CAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CD43AE51EF2DF88003CAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CD43AE71EF2DF88003CAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD43AEC1EF2DF88003CAF19 /* buysell-azusapacificTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "buysell-azusapacificTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD43AF01EF2DF88003CAF19 /* buysell_azusapacificTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buysell_azusapacificTests.swift; sourceTree = "<group>"; };
+		2CD43AF21EF2DF88003CAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD43AF71EF2DF88003CAF19 /* buysell-azusapacificUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "buysell-azusapacificUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buysell_azusapacificUITests.swift; sourceTree = "<group>"; };
+		2CD43AFD1EF2DF88003CAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CD43AD51EF2DF88003CAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AE91EF2DF88003CAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AF41EF2DF88003CAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD43ACF1EF2DF88003CAF19 = {
+			isa = PBXGroup;
+			children = (
+				2CD43ADA1EF2DF88003CAF19 /* buysell-azusapacific */,
+				2CD43AEF1EF2DF88003CAF19 /* buysell-azusapacificTests */,
+				2CD43AFA1EF2DF88003CAF19 /* buysell-azusapacificUITests */,
+				2CD43AD91EF2DF88003CAF19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CD43AD91EF2DF88003CAF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43AD81EF2DF88003CAF19 /* buysell-azusapacific.app */,
+				2CD43AEC1EF2DF88003CAF19 /* buysell-azusapacificTests.xctest */,
+				2CD43AF71EF2DF88003CAF19 /* buysell-azusapacificUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD43ADA1EF2DF88003CAF19 /* buysell-azusapacific */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */,
+				2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */,
+				2CD43ADF1EF2DF88003CAF19 /* Main.storyboard */,
+				2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */,
+				2CD43AE41EF2DF88003CAF19 /* LaunchScreen.storyboard */,
+				2CD43AE71EF2DF88003CAF19 /* Info.plist */,
+			);
+			path = "buysell-azusapacific";
+			sourceTree = "<group>";
+		};
+		2CD43AEF1EF2DF88003CAF19 /* buysell-azusapacificTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43AF01EF2DF88003CAF19 /* buysell_azusapacificTests.swift */,
+				2CD43AF21EF2DF88003CAF19 /* Info.plist */,
+			);
+			path = "buysell-azusapacificTests";
+			sourceTree = "<group>";
+		};
+		2CD43AFA1EF2DF88003CAF19 /* buysell-azusapacificUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */,
+				2CD43AFD1EF2DF88003CAF19 /* Info.plist */,
+			);
+			path = "buysell-azusapacificUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CD43AD71EF2DF88003CAF19 /* buysell-azusapacific */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD43B001EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacific" */;
+			buildPhases = (
+				2CD43AD41EF2DF88003CAF19 /* Sources */,
+				2CD43AD51EF2DF88003CAF19 /* Frameworks */,
+				2CD43AD61EF2DF88003CAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "buysell-azusapacific";
+			productName = "buysell-azusapacific";
+			productReference = 2CD43AD81EF2DF88003CAF19 /* buysell-azusapacific.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CD43AEB1EF2DF88003CAF19 /* buysell-azusapacificTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD43B031EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificTests" */;
+			buildPhases = (
+				2CD43AE81EF2DF88003CAF19 /* Sources */,
+				2CD43AE91EF2DF88003CAF19 /* Frameworks */,
+				2CD43AEA1EF2DF88003CAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CD43AEE1EF2DF88003CAF19 /* PBXTargetDependency */,
+			);
+			name = "buysell-azusapacificTests";
+			productName = "buysell-azusapacificTests";
+			productReference = 2CD43AEC1EF2DF88003CAF19 /* buysell-azusapacificTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CD43AF61EF2DF88003CAF19 /* buysell-azusapacificUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD43B061EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificUITests" */;
+			buildPhases = (
+				2CD43AF31EF2DF88003CAF19 /* Sources */,
+				2CD43AF41EF2DF88003CAF19 /* Frameworks */,
+				2CD43AF51EF2DF88003CAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CD43AF91EF2DF88003CAF19 /* PBXTargetDependency */,
+			);
+			name = "buysell-azusapacificUITests";
+			productName = "buysell-azusapacificUITests";
+			productReference = 2CD43AF71EF2DF88003CAF19 /* buysell-azusapacificUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CD43AD01EF2DF88003CAF19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kyle Nakamura (Student)";
+				TargetAttributes = {
+					2CD43AD71EF2DF88003CAF19 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					2CD43AEB1EF2DF88003CAF19 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2CD43AD71EF2DF88003CAF19;
+					};
+					2CD43AF61EF2DF88003CAF19 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2CD43AD71EF2DF88003CAF19;
+					};
+				};
+			};
+			buildConfigurationList = 2CD43AD31EF2DF88003CAF19 /* Build configuration list for PBXProject "buysell-azusapacific" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CD43ACF1EF2DF88003CAF19;
+			productRefGroup = 2CD43AD91EF2DF88003CAF19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CD43AD71EF2DF88003CAF19 /* buysell-azusapacific */,
+				2CD43AEB1EF2DF88003CAF19 /* buysell-azusapacificTests */,
+				2CD43AF61EF2DF88003CAF19 /* buysell-azusapacificUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CD43AD61EF2DF88003CAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD43AE61EF2DF88003CAF19 /* LaunchScreen.storyboard in Resources */,
+				2CD43AE31EF2DF88003CAF19 /* Assets.xcassets in Resources */,
+				2CD43AE11EF2DF88003CAF19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AEA1EF2DF88003CAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AF51EF2DF88003CAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD43AD41EF2DF88003CAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD43ADE1EF2DF88003CAF19 /* ViewController.swift in Sources */,
+				2CD43ADC1EF2DF88003CAF19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AE81EF2DF88003CAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD43AF11EF2DF88003CAF19 /* buysell_azusapacificTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD43AF31EF2DF88003CAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD43AFC1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CD43AEE1EF2DF88003CAF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CD43AD71EF2DF88003CAF19 /* buysell-azusapacific */;
+			targetProxy = 2CD43AED1EF2DF88003CAF19 /* PBXContainerItemProxy */;
+		};
+		2CD43AF91EF2DF88003CAF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CD43AD71EF2DF88003CAF19 /* buysell-azusapacific */;
+			targetProxy = 2CD43AF81EF2DF88003CAF19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CD43ADF1EF2DF88003CAF19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD43AE01EF2DF88003CAF19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CD43AE41EF2DF88003CAF19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD43AE51EF2DF88003CAF19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CD43AFE1EF2DF88003CAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CD43AFF1EF2DF88003CAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CD43B011EF2DF88003CAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2CD43B021EF2DF88003CAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2CD43B041EF2DF88003CAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "buysell-azusapacificTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacificTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/buysell-azusapacific.app/buysell-azusapacific";
+			};
+			name = Debug;
+		};
+		2CD43B051EF2DF88003CAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "buysell-azusapacificTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacificTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/buysell-azusapacific.app/buysell-azusapacific";
+			};
+			name = Release;
+		};
+		2CD43B071EF2DF88003CAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "buysell-azusapacificUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacificUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "buysell-azusapacific";
+			};
+			name = Debug;
+		};
+		2CD43B081EF2DF88003CAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "buysell-azusapacificUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacificUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "buysell-azusapacific";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD43AD31EF2DF88003CAF19 /* Build configuration list for PBXProject "buysell-azusapacific" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD43AFE1EF2DF88003CAF19 /* Debug */,
+				2CD43AFF1EF2DF88003CAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CD43B001EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacific" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD43B011EF2DF88003CAF19 /* Debug */,
+				2CD43B021EF2DF88003CAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CD43B031EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD43B041EF2DF88003CAF19 /* Debug */,
+				2CD43B051EF2DF88003CAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CD43B061EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD43B071EF2DF88003CAF19 /* Debug */,
+				2CD43B081EF2DF88003CAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CD43AD01EF2DF88003CAF19 /* Project object */;
+}
