@@ -15,7 +15,7 @@ class Item {
     fileprivate var _backgroundImg: UIImage = #imageLiteral(resourceName: "comic")
     fileprivate var _priceLbl: String = "$0"
     fileprivate var _usrImg: UIImage = #imageLiteral(resourceName: "icon-user")
-    fileprivate var _itemTitleLbl: String = "Item Title"
+    fileprivate var _itemTitle: String = "Item Title"
     
     // Getters
     var backgroundImg: UIImage {
@@ -44,18 +44,18 @@ class Item {
     }
     var itemTitleLbl: String {
         get {
-            return _itemTitleLbl
+            return _itemTitle
         }
         set(value) {
-            _itemTitleLbl = value
+            _itemTitle = value
         }
     }
     
     // Initializer
-    init(backgroundImage: UIImage, priceLabel: String, userImage: UIImage, itemTitleLabel: String) {
+    init(backgroundImage: UIImage, priceLabel: String, userImage: UIImage, itemTitle: String) {
         self._backgroundImg = backgroundImage
         self._priceLbl = priceLabel
         self._usrImg = userImage
-        self._itemTitleLbl = itemTitleLabel
+        self._itemTitle = itemTitle
     }
 }

@@ -14,7 +14,6 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var usrImg: UIImageView!
-    @IBOutlet weak var itemTitleLbl: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +24,5 @@ class ItemCell: UITableViewCell {
         backgroundImg.image = backgroundImage
         priceLbl.text = priceLabel
         usrImg.image = userImage
-        itemTitleLbl.text = itemTitleLabel
     }
 }

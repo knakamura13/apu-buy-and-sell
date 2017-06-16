@@ -10,12 +10,12 @@ import UIKit
 import Google
 import GoogleSignIn
 
-var userId = ""
-var idToken = ""
-var fullName = ""
-var givenName = ""
-var familyName = ""
-var email = ""
+var userId: String?
+var idToken: String?
+var fullName: String?
+var givenName: String?
+var familyName: String?
+var email: String?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -38,22 +38,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     // Also for Google Auth
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations on signed in user here.
-        userId = user.userID                    // For client-side use only!
-        idToken = user.authentication.idToken   // Safe to send to the server
-        fullName = user.profile.name
-        givenName = user.profile.givenName
-        familyName = user.profile.familyName
-        email = user.profile.email
-        
-        print("Google authenticated user successfully")
-        
-        print("------------------------")
-        print("KYLE: userId = \(userId)")
-        print("KYLE: fullName = \(fullName)")
-        print("KYLE: givenName = \(givenName)")
-        print("KYLE: familyName = \(familyName)")
-        print("KYLE: email = \(email)")
-        print("------------------------")
+        if let user = user {
+            userId = user.userID                    // For client-side use only!
+            idToken = user.authentication.idToken   // Safe to send to the server
+            fullName = user.profile.name
+            givenName = user.profile.givenName
+            familyName = user.profile.familyName
+            email = user.profile.email
+            
+            print("Google authenticated user successfully")
+            
+            print("------------------------")
+            print("KYLE: userId = \(userId)")
+            print("KYLE: fullName = \(fullName)")
+            print("KYLE: givenName = \(givenName)")
+            print("KYLE: familyName = \(familyName)")
+            print("KYLE: email = \(email)")
+            print("------------------------")
+        }
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
