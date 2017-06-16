@@ -7,3 +7,55 @@
 //
 
 import Foundation
+import UIKit
+
+class Item {
+    
+    // Base variables
+    fileprivate var _backgroundImg: UIImage = #imageLiteral(resourceName: "comic")
+    fileprivate var _priceLbl: String = "$0"
+    fileprivate var _usrImg: UIImage = #imageLiteral(resourceName: "icon-user")
+    fileprivate var _itemTitleLbl: String = "Item Title"
+    
+    // Getters
+    var backgroundImg: UIImage {
+        get {
+            return _backgroundImg
+        }
+        set(value) {
+            _backgroundImg = value
+        }
+    }
+    var priceLbl: String {
+        get {
+            return _priceLbl
+        }
+        set(value) {
+            _priceLbl = value
+        }
+    }
+    var userImg: UIImage {
+        get {
+            return _usrImg
+        }
+        set(value) {
+            _usrImg = value
+        }
+    }
+    var itemTitleLbl: String {
+        get {
+            return _itemTitleLbl
+        }
+        set(value) {
+            _itemTitleLbl = value
+        }
+    }
+    
+    // Initializer
+    init(backgroundImage: UIImage, priceLabel: String, userImage: UIImage, itemTitleLabel: String) {
+        self._backgroundImg = backgroundImage
+        self._priceLbl = priceLabel
+        self._usrImg = userImage
+        self._itemTitleLbl = itemTitleLabel
+    }
+}

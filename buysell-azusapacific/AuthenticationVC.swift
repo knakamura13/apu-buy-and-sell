@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthenticationVC.swift
 //  buysell-azusapacific
 //
 //  Created by Kyle Nakamura (Student) on 6/15/17.
@@ -14,7 +14,9 @@
 import UIKit
 import GoogleSignIn
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class AuthenticationVC: UIViewController, GIDSignInUIDelegate {
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +24,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
     }
     
-    
-    
     /*
          Google Auth Functions
     */
     // Sign out
-    @IBAction func didTapSignOut(sender: AnyObject) {
+    @IBAction func didTapSignOut(_ sender: AnyObject) {
         print("User signed out")
         GIDSignIn.sharedInstance().signOut()
     }
@@ -42,7 +42,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
               dismiss viewController: UIViewController!) {
         self.dismiss(animated: true, completion: nil)
     }
-    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+    func signIn(_ signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
                 withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...

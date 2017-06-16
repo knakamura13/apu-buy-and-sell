@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026CDCADF961FBA4C13A5EE1 /* Pods_buysell_azusapacificUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96C80DA4E5FC6FA8C91C13E /* Pods_buysell_azusapacificUITests.framework */; };
+		2C1327921EF340EA008ABC44 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1327911EF340EA008ABC44 /* ItemCell.swift */; };
+		2C1327941EF3494C008ABC44 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1327931EF3494C008ABC44 /* Item.swift */; };
+		2C1327981EF34F24008ABC44 /* InitializedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1327971EF34F24008ABC44 /* InitializedItems.swift */; };
+		2C36E8371EF308A20021EC1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C36E8361EF308A20021EC1B /* GoogleService-Info.plist */; };
 		2CD43ADC1EF2DF88003CAF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */; };
-		2CD43ADE1EF2DF88003CAF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */; };
+		2CD43ADE1EF2DF88003CAF19 /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43ADD1EF2DF88003CAF19 /* AuthenticationVC.swift */; };
 		2CD43AE11EF2DF88003CAF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43ADF1EF2DF88003CAF19 /* Main.storyboard */; };
 		2CD43AE31EF2DF88003CAF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */; };
 		2CD43AE61EF2DF88003CAF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD43AE41EF2DF88003CAF19 /* LaunchScreen.storyboard */; };
 		2CD43AF11EF2DF88003CAF19 /* buysell_azusapacificTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43AF01EF2DF88003CAF19 /* buysell_azusapacificTests.swift */; };
 		2CD43AFC1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */; };
+		2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */; };
+		2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */; };
+		92BB436E101EA349C9D9FB94 /* Pods_buysell_azusapacificTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */; };
+		F2CE0593EDFB721357B3ED36 /* Pods_buysell_azusapacific.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1327911EF340EA008ABC44 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		2C1327931EF3494C008ABC44 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2C1327971EF34F24008ABC44 /* InitializedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializedItems.swift; sourceTree = "<group>"; };
+		2C36E8361EF308A20021EC1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C4670AF1EF2F7AA004F1846 /* buysell-azusapacific-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "buysell-azusapacific-Bridging-Header.h"; sourceTree = "<group>"; };
 		2CD43AD81EF2DF88003CAF19 /* buysell-azusapacific.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "buysell-azusapacific.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CD43ADD1EF2DF88003CAF19 /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
 		2CD43AE01EF2DF88003CAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CD43AE51EF2DF88003CAF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,17 @@
 		2CD43AF71EF2DF88003CAF19 /* buysell-azusapacificUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "buysell-azusapacificUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buysell_azusapacificUITests.swift; sourceTree = "<group>"; };
 		2CD43AFD1EF2DF88003CAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListingsVC.swift; sourceTree = "<group>"; };
+		2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		6491835E3D229C896BEB15A0 /* Pods-buysell-azusapacificTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68EEBDFC2C591C03CA21CDE4 /* Pods-buysell-azusapacificUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacificTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACC62AC8DE54049A786D6C7 /* Pods-buysell-azusapacific.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacific.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific.debug.xcconfig"; sourceTree = "<group>"; };
+		A16682D65D48CECF978EC6C3 /* Pods-buysell-azusapacificUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2606851C3E93EBF791266BC /* Pods-buysell-azusapacificTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests.release.xcconfig"; sourceTree = "<group>"; };
+		C96C80DA4E5FC6FA8C91C13E /* Pods_buysell_azusapacificUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacificUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacific.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3277DA32B6912FBAA5F6CB0 /* Pods-buysell-azusapacific.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacific.release.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CE0593EDFB721357B3ED36 /* Pods_buysell_azusapacific.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BB436E101EA349C9D9FB94 /* Pods_buysell_azusapacificTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026CDCADF961FBA4C13A5EE1 /* Pods_buysell_azusapacificUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +109,8 @@
 				2CD43AEF1EF2DF88003CAF19 /* buysell-azusapacificTests */,
 				2CD43AFA1EF2DF88003CAF19 /* buysell-azusapacificUITests */,
 				2CD43AD91EF2DF88003CAF19 /* Products */,
+				3D50627D2E24FDFA0DCF9C75 /* Pods */,
+				7B10CE312F5C14C57E39F5A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +127,13 @@
 		2CD43ADA1EF2DF88003CAF19 /* buysell-azusapacific */ = {
 			isa = PBXGroup;
 			children = (
-				2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */,
-				2CD43ADD1EF2DF88003CAF19 /* ViewController.swift */,
+				2CD43B0C1EF2E942003CAF19 /* Util */,
+				2CD43B0B1EF2E93F003CAF19 /* Model */,
+				2CD43B0A1EF2E93A003CAF19 /* View */,
+				2CD43B091EF2E933003CAF19 /* Controller */,
 				2CD43ADF1EF2DF88003CAF19 /* Main.storyboard */,
 				2CD43AE21EF2DF88003CAF19 /* Assets.xcassets */,
 				2CD43AE41EF2DF88003CAF19 /* LaunchScreen.storyboard */,
-				2CD43AE71EF2DF88003CAF19 /* Info.plist */,
 			);
 			path = "buysell-azusapacific";
 			sourceTree = "<group>";
@@ -125,6 +156,67 @@
 			path = "buysell-azusapacificUITests";
 			sourceTree = "<group>";
 		};
+		2CD43B091EF2E933003CAF19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43ADD1EF2DF88003CAF19 /* AuthenticationVC.swift */,
+				2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */,
+				2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2CD43B0A1EF2E93A003CAF19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C1327911EF340EA008ABC44 /* ItemCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2CD43B0B1EF2E93F003CAF19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C1327931EF3494C008ABC44 /* Item.swift */,
+				2C1327971EF34F24008ABC44 /* InitializedItems.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2CD43B0C1EF2E942003CAF19 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43ADB1EF2DF88003CAF19 /* AppDelegate.swift */,
+				2CD43AE71EF2DF88003CAF19 /* Info.plist */,
+				2C4670AF1EF2F7AA004F1846 /* buysell-azusapacific-Bridging-Header.h */,
+				2C36E8361EF308A20021EC1B /* GoogleService-Info.plist */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		3D50627D2E24FDFA0DCF9C75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ACC62AC8DE54049A786D6C7 /* Pods-buysell-azusapacific.debug.xcconfig */,
+				E3277DA32B6912FBAA5F6CB0 /* Pods-buysell-azusapacific.release.xcconfig */,
+				6491835E3D229C896BEB15A0 /* Pods-buysell-azusapacificTests.debug.xcconfig */,
+				C2606851C3E93EBF791266BC /* Pods-buysell-azusapacificTests.release.xcconfig */,
+				A16682D65D48CECF978EC6C3 /* Pods-buysell-azusapacificUITests.debug.xcconfig */,
+				68EEBDFC2C591C03CA21CDE4 /* Pods-buysell-azusapacificUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B10CE312F5C14C57E39F5A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */,
+				7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */,
+				C96C80DA4E5FC6FA8C91C13E /* Pods_buysell_azusapacificUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD43B001EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacific" */;
 			buildPhases = (
+				220941B1DD24D29FFE941DB4 /* [CP] Check Pods Manifest.lock */,
 				2CD43AD41EF2DF88003CAF19 /* Sources */,
 				2CD43AD51EF2DF88003CAF19 /* Frameworks */,
 				2CD43AD61EF2DF88003CAF19 /* Resources */,
+				708FCBA8EB9C277088F035AE /* [CP] Embed Pods Frameworks */,
+				04089804401881B654210BDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD43B031EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificTests" */;
 			buildPhases = (
+				86ED160A927B6E6750D69651 /* [CP] Check Pods Manifest.lock */,
 				2CD43AE81EF2DF88003CAF19 /* Sources */,
 				2CD43AE91EF2DF88003CAF19 /* Frameworks */,
 				2CD43AEA1EF2DF88003CAF19 /* Resources */,
+				AE697382251D987DC344A3E2 /* [CP] Embed Pods Frameworks */,
+				20031AE855CD973A1A435243 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD43B061EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificUITests" */;
 			buildPhases = (
+				2B53CE24A494D81B62713D4C /* [CP] Check Pods Manifest.lock */,
 				2CD43AF31EF2DF88003CAF19 /* Sources */,
 				2CD43AF41EF2DF88003CAF19 /* Frameworks */,
 				2CD43AF51EF2DF88003CAF19 /* Resources */,
+				0A8628FBA630BD6F68C43F38 /* [CP] Embed Pods Frameworks */,
+				4887D2F2E12EDFBED756D10C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +294,19 @@
 				TargetAttributes = {
 					2CD43AD71EF2DF88003CAF19 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7GDSF452LB;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					2CD43AEB1EF2DF88003CAF19 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2CD43AD71EF2DF88003CAF19;
 					};
 					2CD43AF61EF2DF88003CAF19 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2CD43AD71EF2DF88003CAF19;
 					};
@@ -233,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD43AE61EF2DF88003CAF19 /* LaunchScreen.storyboard in Resources */,
+				2C36E8371EF308A20021EC1B /* GoogleService-Info.plist in Resources */,
 				2CD43AE31EF2DF88003CAF19 /* Assets.xcassets in Resources */,
 				2CD43AE11EF2DF88003CAF19 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +360,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04089804401881B654210BDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A8628FBA630BD6F68C43F38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20031AE855CD973A1A435243 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		220941B1DD24D29FFE941DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B53CE24A494D81B62713D4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4887D2F2E12EDFBED756D10C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708FCBA8EB9C277088F035AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86ED160A927B6E6750D69651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE697382251D987DC344A3E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CD43AD41EF2DF88003CAF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD43ADE1EF2DF88003CAF19 /* ViewController.swift in Sources */,
+				2CD43ADE1EF2DF88003CAF19 /* AuthenticationVC.swift in Sources */,
+				2C1327981EF34F24008ABC44 /* InitializedItems.swift in Sources */,
 				2CD43ADC1EF2DF88003CAF19 /* AppDelegate.swift in Sources */,
+				2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */,
+				2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */,
+				2C1327941EF3494C008ABC44 /* Item.swift in Sources */,
+				2C1327921EF340EA008ABC44 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,30 +661,39 @@
 		};
 		2CD43B011EF2DF88003CAF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACC62AC8DE54049A786D6C7 /* Pods-buysell-azusapacific.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2CD43B021EF2DF88003CAF19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3277DA32B6912FBAA5F6CB0 /* Pods-buysell-azusapacific.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2CD43B041EF2DF88003CAF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6491835E3D229C896BEB15A0 /* Pods-buysell-azusapacificTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +708,7 @@
 		};
 		2CD43B051EF2DF88003CAF19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2606851C3E93EBF791266BC /* Pods-buysell-azusapacificTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +723,7 @@
 		};
 		2CD43B071EF2DF88003CAF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16682D65D48CECF978EC6C3 /* Pods-buysell-azusapacificUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "buysell-azusapacificUITests/Info.plist";
@@ -477,6 +737,7 @@
 		};
 		2CD43B081EF2DF88003CAF19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EEBDFC2C591C03CA21CDE4 /* Pods-buysell-azusapacificUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "buysell-azusapacificUITests/Info.plist";
@@ -507,6 +768,7 @@
 				2CD43B021EF2DF88003CAF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD43B031EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +777,7 @@
 				2CD43B051EF2DF88003CAF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD43B061EF2DF88003CAF19 /* Build configuration list for PBXNativeTarget "buysell-azusapacificUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +786,7 @@
 				2CD43B081EF2DF88003CAF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

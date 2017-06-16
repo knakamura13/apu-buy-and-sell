@@ -7,16 +7,56 @@
 //
 
 import UIKit
+import Google
+import GoogleSignIn
+
+var userId = ""
+var idToken = ""
+var fullName = ""
+var givenName = ""
+var familyName = ""
+var email = ""
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
     var window: UIWindow?
-
-
+    
+    // Includes code for Google Auth setup
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Initialize sign-in
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
+        
+        GIDSignIn.sharedInstance().delegate = self
+        
         return true
+    }
+    
+    // Also for Google Auth
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations on signed in user here.
+        userId = user.userID                    // For client-side use only!
+        idToken = user.authentication.idToken   // Safe to send to the server
+        fullName = user.profile.name
+        givenName = user.profile.givenName
+        familyName = user.profile.familyName
+        email = user.profile.email
+        
+        print("Google authenticated user successfully")
+        
+        print("------------------------")
+        print("KYLE: userId = \(userId)")
+        print("KYLE: fullName = \(fullName)")
+        print("KYLE: givenName = \(givenName)")
+        print("KYLE: familyName = \(familyName)")
+        print("KYLE: email = \(email)")
+        print("------------------------")
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -40,7 +80,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

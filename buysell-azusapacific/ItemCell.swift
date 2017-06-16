@@ -9,16 +9,22 @@
 import UIKit
 
 class ItemCell: UITableViewCell {
+    
+    // Outlets
+    @IBOutlet weak var backgroundImg: UIImageView!
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var usrImg: UIImageView!
+    @IBOutlet weak var itemTitleLbl: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(_ backgroundImage: UIImage, priceLabel: String, userImage: UIImage, itemTitleLabel: String) {
+        backgroundImg.image = backgroundImage
+        priceLbl.text = priceLabel
+        usrImg.image = userImage
+        itemTitleLbl.text = itemTitleLabel
     }
-
 }

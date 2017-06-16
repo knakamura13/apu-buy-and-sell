@@ -6,6 +6,8 @@
 //  Copyright © 2017 Kyle Nakamura (Student). All rights reserved.
 //
 
+#import <Google/SignIn.h>
+
 #ifndef buysell_azusapacific_Bridging_Header_h
 #define buysell_azusapacific_Bridging_Header_h
 

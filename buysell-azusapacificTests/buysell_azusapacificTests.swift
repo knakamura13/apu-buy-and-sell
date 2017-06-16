@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import buysell_azusapacific
 
 class buysell_azusapacificTests: XCTestCase {
     
