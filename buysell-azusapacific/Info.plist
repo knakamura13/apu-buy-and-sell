@@ -58,5 +58,7 @@
 	<string>To take a photo of your product.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To upload a photo of your product.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>To save your photo.</string>
 </dict>
 </plist>

@@ -9,12 +9,11 @@
 import UIKit
 
 class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var pickedImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func cameraButtonAction(_ sender: Any) {
@@ -41,10 +40,18 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         let imageData = UIImageJPEGRepresentation(pickedImage.image!, 0.6)
         let compressdJPEGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressdJPEGImage!, nil, nil, nil)
+        saveNotice()
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!){
         pickedImage.image = image
         self.dismiss(animated: true, completion: nil);
+    }
+    
+    func saveNotice(){
+        let alertController = UIAlertController(title: "Image Saved!", message: "Your picture was successfully saved.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
     }
 }

@@ -12,8 +12,7 @@ class CreateItemVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func imageOnePressed(_ sender: Any) {
@@ -29,8 +28,6 @@ class CreateItemVC: UIViewController {
     }
     
     func chooseNewImage() {
-        print("KYLE: it's working")
         performSegue(withIdentifier: "chooseNewImageSegue", sender: self)
     }
-    
 }

@@ -15,9 +15,6 @@ import UIKit
 import GoogleSignIn
 
 class AuthenticationVC: UIViewController, GIDSignInUIDelegate {
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,11 +39,9 @@ class AuthenticationVC: UIViewController, GIDSignInUIDelegate {
               dismiss viewController: UIViewController!) {
         self.dismiss(animated: true, completion: nil)
     }
+    // User exited app
     func signIn(_ signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
                 withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
-        // ...
     }
-
 }
-

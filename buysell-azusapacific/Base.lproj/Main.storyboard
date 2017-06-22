@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QDg-c1-obS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QDg-c1-obS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -184,7 +184,7 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="596-ez-6lt">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-2k-S3i">
+                                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-2k-S3i">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <gestureRecognizers/>
                                                                 <connections>
@@ -203,7 +203,7 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-xa-1oJ">
                                                         <rect key="frame" x="100" y="0.0" width="80" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="h76-OJ-jHh">
+                                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="h76-OJ-jHh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <gestureRecognizers/>
                                                                 <connections>
@@ -222,7 +222,7 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-kw-nMf">
                                                         <rect key="frame" x="200" y="0.0" width="79" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="ZFp-MM-BKZ">
+                                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-dotted-square" translatesAutoresizingMaskIntoConstraints="NO" id="ZFp-MM-BKZ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79" height="80"/>
                                                                 <gestureRecognizers/>
                                                                 <connections>
@@ -304,8 +304,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tou-g3-2H1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tou-g3-2H1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tou-g3-2H1" secondAttribute="height" multiplier="1:1" id="dfC-3f-V6e"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-SM-wAy">
                                 <rect key="frame" x="313" y="28" width="46" height="36"/>
@@ -356,7 +359,6 @@
                             <constraint firstItem="Kqg-SM-wAy" firstAttribute="trailing" secondItem="anP-4K-mjM" secondAttribute="trailingMargin" id="2jw-DO-Wy1"/>
                             <constraint firstItem="Tou-g3-2H1" firstAttribute="top" secondItem="anP-4K-mjM" secondAttribute="top" id="7zk-Sh-1H2"/>
                             <constraint firstItem="Kqg-SM-wAy" firstAttribute="top" secondItem="rnx-7E-HLe" secondAttribute="bottom" constant="8" id="BpK-ZP-IeF"/>
-                            <constraint firstItem="0Ys-Nh-tl8" firstAttribute="top" secondItem="Tou-g3-2H1" secondAttribute="bottom" id="CDT-Iq-dj7"/>
                             <constraint firstAttribute="trailing" secondItem="Tou-g3-2H1" secondAttribute="trailing" id="g5m-4A-8za"/>
                             <constraint firstItem="0Ys-Nh-tl8" firstAttribute="top" secondItem="fuw-lN-rz5" secondAttribute="bottom" constant="40" id="mAF-gN-7d3"/>
                             <constraint firstItem="fuw-lN-rz5" firstAttribute="centerX" secondItem="anP-4K-mjM" secondAttribute="centerX" id="oDL-oP-xVE"/>
@@ -364,7 +366,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pickedImage" destination="Tou-g3-2H1" id="Oyj-me-cTX"/>
+                        <outlet property="pickedImage" destination="Tou-g3-2H1" id="kdy-3b-ngy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flN-25-Hap" userLabel="First Responder" sceneMemberID="firstResponder"/>
