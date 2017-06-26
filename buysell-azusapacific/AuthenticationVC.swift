@@ -21,6 +21,12 @@ class AuthenticationVC: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if userId != nil {
+            performSegue(withIdentifier: "signedInSegue", sender: nil)
+        }
+    }
+    
     /*
          Google Auth Functions
     */

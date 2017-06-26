@@ -169,8 +169,8 @@
 				2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */,
 				2C2351361EF440E9003B048F /* ItemViewVC.swift */,
 				2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */,
-				2CDF0E951EFB4636002C8C6F /* CreateItemVC.swift */,
 				2C8F3C231EFB411F002DBBDB /* CameraVC.swift */,
+				2CDF0E951EFB4636002C8C6F /* CreateItemVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

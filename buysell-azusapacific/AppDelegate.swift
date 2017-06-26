@@ -16,11 +16,14 @@ var fullName: String?
 var givenName: String?
 var familyName: String?
 var email: String?
+var handle: String?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
+    
+    var signedInSilently = false
     
     // Includes code for Google Auth setup
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -31,6 +34,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
         
         GIDSignIn.sharedInstance().delegate = self
+        
+        /* check for user's token */
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            signedInSilently = true
+            GIDSignIn.sharedInstance().signInSilently()
+            
+            print("USER SIGNED IN??!??!?!")
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            if let tabBarVC = sb.instantiateViewController(withIdentifier: "TabController") as? UITabBarController {
+                window!.rootViewController = tabBarVC
+            }
+        }
         
         return true
     }
@@ -45,18 +60,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             givenName = user.profile.givenName
             familyName = user.profile.familyName
             email = user.profile.email
+            handle = email!
+            if let dotRange = handle!.range(of: "@") {
+                handle!.removeSubrange(dotRange.lowerBound..<handle!.endIndex)
+            }
             
-            print("Google authenticated user successfully")
+            print("--------------------------------------------")
+            print("userId \t\t= \t\(userId!)")
+            print("fullName \t= \t\(fullName!)")
+            print("givenName \t= \t\(givenName!)")
+            print("familyName \t= \t\(familyName!)")
+            print("handle \t\t= \t\(handle!)")
+            print("email \t\t= \t\(email!)")
+            print("--------------------------------------------")
             
-            print("------------------------")
-            print("KYLE: userId = \(userId)")
-            print("KYLE: fullName = \(fullName)")
-            print("KYLE: givenName = \(givenName)")
-            print("KYLE: familyName = \(familyName)")
-            print("KYLE: email = \(email)")
-            print("------------------------")
+            if !signedInSilently {
+                self.window?.rootViewController!.performSegue(withIdentifier: "signedInSegue", sender: nil)
+            }
         }
     }
+    
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }

@@ -14,20 +14,4 @@ class CreateItemVC: UIViewController {
         super.viewDidLoad()
         
     }
-    
-    @IBAction func imageOnePressed(_ sender: Any) {
-        chooseNewImage()
-    }
-    
-    @IBAction func imageTwoPressed(_ sender: Any) {
-        chooseNewImage()
-    }
-    
-    @IBAction func imageThreePressed(_ sender: Any) {
-        chooseNewImage()
-    }
-    
-    func chooseNewImage() {
-        performSegue(withIdentifier: "chooseNewImageSegue", sender: self)
-    }
 }
