@@ -8,22 +8,18 @@
 
 import UIKit
 
-class ItemListingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ItemListingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ItemViewVCDelegate {
     
     // Outlets
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
-    var inSearchMode = false
-    var filteredItems = [Item]()
-    var limitedItems = [Item]()
+    var selectedItem: Item? = nil
+    var items: [Item?] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        searchBar.delegate = self
-        searchBar.returnKeyType = UIReturnKeyType.done
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,43 +37,48 @@ class ItemListingsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             defaultItemsArray.append(Item(backgroundImage: img, priceLabel: prc, userImage: usr, itemTitle: ttl))
         }
-        limitedItems = defaultItemsArray
+        items = defaultItemsArray
     }
     
     @IBAction func backFromModal(segue: UIStoryboardSegue) {
-        print("and we are back")
-        // Switch to the second tab (tabs are numbered 0, 1, 2)
-        self.tabBarController?.selectedIndex = 1
+        self.tabBarController?.selectedIndex = 1    // Switch to the second tab (tabs are numbered 0, 1, 2)
     }
-    
     
     // Table view functions
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(limitedItems[indexPath.row].itemTitleLbl)
-        performSegue(withIdentifier: "itemClickedSegue", sender: nil)
-    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as? ItemCell {
-            var currentItem: Item
-            if inSearchMode {
-                currentItem = filteredItems[indexPath.row]
-            } else {
-                currentItem = limitedItems[indexPath.row]
+            if let tempItem = items[indexPath.row] {
+                cell.configureCell(tempItem.backgroundImg, priceLabel: tempItem.price, userImage: tempItem.userImg, itemTitleLabel: tempItem.itemTitle)
+                return cell
             }
-            cell.configureCell(currentItem.backgroundImg, priceLabel: currentItem.priceLbl, userImage: currentItem.userImg, itemTitleLabel: currentItem.itemTitleLbl)
-            return cell
+            return ItemCell()
         } else {
             return ItemCell()
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let item = items[indexPath.row] {
+            selectedItem = item
+        }
+        performSegue(withIdentifier: "itemClickedSegue", sender: nil)
+    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        selectedItem = nil
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let detailVc = segue.destination as? ItemViewVC {
+            detailVc.delegate = self
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if inSearchMode {
-            return filteredItems.count
-        } else {
-            return limitedItems.count        // only ever returns two items
-        }
+        return items.count
     }
+}
+
+protocol ItemViewVCDelegate: class {
+    var selectedItem: Item? { get }
 }

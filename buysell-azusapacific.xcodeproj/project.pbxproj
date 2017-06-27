@@ -25,6 +25,7 @@
 		2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */; };
 		2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */; };
 		92BB436E101EA349C9D9FB94 /* Pods_buysell_azusapacificTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */; };
+		BF49AC5E1F018AAB007EB388 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF49AC5D1F018AAB007EB388 /* Global.swift */; };
 		F2CE0593EDFB721357B3ED36 /* Pods_buysell_azusapacific.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacificTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACC62AC8DE54049A786D6C7 /* Pods-buysell-azusapacific.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacific.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific.debug.xcconfig"; sourceTree = "<group>"; };
 		A16682D65D48CECF978EC6C3 /* Pods-buysell-azusapacificUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF49AC5D1F018AAB007EB388 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C2606851C3E93EBF791266BC /* Pods-buysell-azusapacificTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests.release.xcconfig"; sourceTree = "<group>"; };
 		C96C80DA4E5FC6FA8C91C13E /* Pods_buysell_azusapacificUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacificUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacific.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				2C1327931EF3494C008ABC44 /* Item.swift */,
+				BF49AC5D1F018AAB007EB388 /* Global.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */,
 				2C2351351EF43ACE003B048F /* CircleImage.swift in Sources */,
 				2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */,
+				BF49AC5E1F018AAB007EB388 /* Global.swift in Sources */,
 				2C1327941EF3494C008ABC44 /* Item.swift in Sources */,
 				2CDF0E961EFB4637002C8C6F /* CreateItemVC.swift in Sources */,
 				2C2351371EF440E9003B048F /* ItemViewVC.swift in Sources */,

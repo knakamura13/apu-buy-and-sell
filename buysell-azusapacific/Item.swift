@@ -14,7 +14,7 @@ class Item {
     // Base variables
     fileprivate var _backgroundImg: UIImage = #imageLiteral(resourceName: "comic")
     fileprivate var _priceLbl: String = "$0"
-    fileprivate var _usrImg: UIImage = #imageLiteral(resourceName: "icon-user")
+    fileprivate var _usrImg: UIImage = #imageLiteral(resourceName: "profile5")
     fileprivate var _itemTitle: String = "Item Title"
     
     // Getters
@@ -26,7 +26,7 @@ class Item {
             _backgroundImg = value
         }
     }
-    var priceLbl: String {
+    var price: String {
         get {
             return _priceLbl
         }
@@ -42,7 +42,7 @@ class Item {
             _usrImg = value
         }
     }
-    var itemTitleLbl: String {
+    var itemTitle: String {
         get {
             return _itemTitle
         }
