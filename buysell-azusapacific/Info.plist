@@ -33,6 +33,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>To take a photo of your product.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>To save your photo.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To upload a photo of your product.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -44,8 +50,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -54,11 +59,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>To take a photo of your product.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To upload a photo of your product.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>To save your photo.</string>
 </dict>
 </plist>

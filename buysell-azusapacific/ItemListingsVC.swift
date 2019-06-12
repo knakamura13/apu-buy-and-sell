@@ -67,8 +67,8 @@ class ItemListingsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let detailVc = segue.destination as? ItemViewVC {
-            detailVc.delegate = self
+        if let ItemViewVC = segue.destination as? ItemViewVC {
+            ItemViewVC.delegate = self
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {

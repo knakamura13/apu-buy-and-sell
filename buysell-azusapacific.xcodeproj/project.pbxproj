@@ -23,7 +23,6 @@
 		2CD43AFC1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43AFB1EF2DF88003CAF19 /* buysell_azusapacificUITests.swift */; };
 		2CDF0E961EFB4637002C8C6F /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0E951EFB4636002C8C6F /* CreateItemVC.swift */; };
 		2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */; };
-		2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */; };
 		92BB436E101EA349C9D9FB94 /* Pods_buysell_azusapacificTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */; };
 		BF49AC5E1F018AAB007EB388 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF49AC5D1F018AAB007EB388 /* Global.swift */; };
 		F2CE0593EDFB721357B3ED36 /* Pods_buysell_azusapacific.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FB98120D603E0B112A346B /* Pods_buysell_azusapacific.framework */; };
@@ -69,7 +68,6 @@
 		2CD43AFD1EF2DF88003CAF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDF0E951EFB4636002C8C6F /* CreateItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListingsVC.swift; sourceTree = "<group>"; };
-		2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		6491835E3D229C896BEB15A0 /* Pods-buysell-azusapacificTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests.debug.xcconfig"; sourceTree = "<group>"; };
 		68EEBDFC2C591C03CA21CDE4 /* Pods-buysell-azusapacificUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buysell-azusapacificUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7330D3E95652E9253D6F1C63 /* Pods_buysell_azusapacificTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buysell_azusapacificTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +168,6 @@
 				2CD43ADD1EF2DF88003CAF19 /* AuthenticationVC.swift */,
 				2CEB11031EF3121B00BFD9B2 /* ItemListingsVC.swift */,
 				2C2351361EF440E9003B048F /* ItemViewVC.swift */,
-				2CEB11051EF3122D00BFD9B2 /* UserProfileVC.swift */,
 				2C8F3C231EFB411F002DBBDB /* CameraVC.swift */,
 				2CDF0E951EFB4636002C8C6F /* CreateItemVC.swift */,
 			);
@@ -260,8 +257,6 @@
 				2CD43AE81EF2DF88003CAF19 /* Sources */,
 				2CD43AE91EF2DF88003CAF19 /* Frameworks */,
 				2CD43AEA1EF2DF88003CAF19 /* Resources */,
-				AE697382251D987DC344A3E2 /* [CP] Embed Pods Frameworks */,
-				20031AE855CD973A1A435243 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,8 +276,6 @@
 				2CD43AF31EF2DF88003CAF19 /* Sources */,
 				2CD43AF41EF2DF88003CAF19 /* Frameworks */,
 				2CD43AF51EF2DF88003CAF19 /* Resources */,
-				0A8628FBA630BD6F68C43F38 /* [CP] Embed Pods Frameworks */,
-				4887D2F2E12EDFBED756D10C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,43 +372,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A8628FBA630BD6F68C43F38 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20031AE855CD973A1A435243 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		220941B1DD24D29FFE941DB4 /* [CP] Check Pods Manifest.lock */ = {
@@ -424,13 +390,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buysell-azusapacific-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B53CE24A494D81B62713D4C /* [CP] Check Pods Manifest.lock */ = {
@@ -439,28 +408,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buysell-azusapacificUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4887D2F2E12EDFBED756D10C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificUITests/Pods-buysell-azusapacificUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		708FCBA8EB9C277088F035AE /* [CP] Embed Pods Frameworks */ = {
@@ -469,9 +426,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacific/Pods-buysell-azusapacific-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,28 +448,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buysell-azusapacificTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AE697382251D987DC344A3E2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buysell-azusapacificTests/Pods-buysell-azusapacificTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -520,7 +472,6 @@
 				2CD43ADC1EF2DF88003CAF19 /* AppDelegate.swift in Sources */,
 				2CEB11041EF3121B00BFD9B2 /* ItemListingsVC.swift in Sources */,
 				2C2351351EF43ACE003B048F /* CircleImage.swift in Sources */,
-				2CEB11061EF3122D00BFD9B2 /* UserProfileVC.swift in Sources */,
 				BF49AC5E1F018AAB007EB388 /* Global.swift in Sources */,
 				2C1327941EF3494C008ABC44 /* Item.swift in Sources */,
 				2CDF0E961EFB4637002C8C6F /* CreateItemVC.swift in Sources */,
@@ -682,7 +633,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -698,7 +649,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "buysell-azusapacific/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.buysell-azusapacific";
 				PRODUCT_NAME = "$(TARGET_NAME)";

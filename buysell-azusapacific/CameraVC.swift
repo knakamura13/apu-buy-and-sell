@@ -8,15 +8,35 @@
 
 import UIKit
 
-class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CreateItemVCDelegate {
     
-    @IBOutlet weak var pickedImage: UIImageView!
+    var selectedImage: UIImage! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func cameraButtonAction(_ sender: Any) {
+    override func viewDidAppear(_ animated: Bool) {
+        if selectedImage != nil {
+            performSegue(withIdentifier: "createItemSegue", sender: self)
+        }
+    }
+    
+    @IBAction func takePhotoTapped(_ sender: Any) {
+        captureImage()
+    }
+    @IBAction func takePhotoTapped2(_ sender: Any) {
+        captureImage()
+    }
+    
+    @IBAction func uploadPhotoTapped(_ sender: Any) {
+        uploadImage()
+    }
+    @IBAction func uploadPhotoTapped2(_ sender: Any) {
+        uploadImage()
+    }
+    
+    func captureImage() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -25,8 +45,7 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
-    
-    @IBAction func photoLibraryAction(_ sender: Any) {
+    func uploadImage() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -36,22 +55,20 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         }
     }
     
-    @IBAction func saveButtonAction(_ sender: Any) {
-        let imageData = UIImageJPEGRepresentation(pickedImage.image!, 0.6)
-        let compressdJPEGImage = UIImage(data: imageData!)
-        UIImageWriteToSavedPhotosAlbum(compressdJPEGImage!, nil, nil, nil)
-        saveNotice()
-    }
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!){
-        pickedImage.image = image
+        selectedImage = image
         self.dismiss(animated: true, completion: nil);
     }
     
-    func saveNotice(){
-        let alertController = UIAlertController(title: "Image Saved!", message: "Your picture was successfully saved.", preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        present(alertController, animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let CreateItemVC = segue.destination as? CreateItemVC {
+            CreateItemVC.delegate = self
+        }
     }
+}
+
+// For sending data to next VC
+protocol CreateItemVCDelegate: class {
+    var selectedImage: UIImage! { get }
 }
